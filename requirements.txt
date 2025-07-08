@@ -1,0 +1,4 @@
+pydoll-python
+requests
+random-user-agent
+beautifulsoup4
