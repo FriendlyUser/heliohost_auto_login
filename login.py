@@ -32,7 +32,10 @@ async def login_heliohost_example():
         pass
     except Exception as e:
         print(e)
-
+    # --- Automatic Login ---
+    # IMPORTANT: Replace with your actual credentials
+    helio_username = os.getenv('HELIO_USERNAME')
+    helio_password = os.getenv('HELIO_PASSWORD')
     # add user agent
     try:
         # user_agent_rotator = UserAgent()
@@ -61,10 +64,7 @@ async def login_heliohost_example():
 
         print(f"Screenshot saved: {screenshot_path}")
         
-         # --- Automatic Login ---
-        # IMPORTANT: Replace with your actual credentials
-        helio_username = os.getenv('HELIO_USERNAME')
-        helio_password = os.getenv('HELIO_PASSWORD')
+
         login_form = await tab.find(tag_name="div", id="login_form")
         print(login_form)
         print(f"Attempting to log in with username: {helio_username}")

@@ -11,8 +11,8 @@ on:
 
 env:
   DISPLAY: ":99"
-  HELIOHOST_USERNAME: ${{ secrets.HELIOHOST_USERNAME }}
-  HELIOHOST_PASSWORD: ${{ secrets.HELIOHOST_PASSWORD }}
+  HELIO_USERNAME: ${{ secrets.HELIO_USERNAME }}
+  HELIO_PASSWORD: ${{ secrets.HELIO_PASSWORD }}
 
 jobs:
   build:
